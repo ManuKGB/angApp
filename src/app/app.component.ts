@@ -13,7 +13,7 @@ export class AppComponent implements OnInit{
     private infoServ:InformationsService
   ){}
   ngOnInit(){
-    this.infoServ.getInformations().subscribe((response)=>{
+    this.infoServ.getInformations().subscribe((response: any)=>{
       this.infos=response;
     })
   }
